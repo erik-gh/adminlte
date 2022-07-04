@@ -21,5 +21,8 @@ class DatabaseSeeder extends Seeder
         $this->call(UbigeoSeeder::class);
         $this->call(ProcesoConsultaSeeder::class);
         $this->call(ProcesoOdpeSeeder::class);
+        $this->call(DepartamentoSeeder::class);
+        $this->call(ProvinciaSeeder::class);
+        $this->call(DistritoSeeder::class);
     }
 }

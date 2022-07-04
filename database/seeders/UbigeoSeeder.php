@@ -18,45 +18,33 @@ class UbigeoSeeder extends Seeder
         $datos = [
             [
                 'cod_ubigeo' => '010101',
-                'departamento_ubigeo' => 'AMAZONAS',
-                'provincia_ubigeo' => 'CHACHAPOYAS',
-                'distrito_ubigeo' => 'CHACHAPOYAS',
+                'nombre' => '',
                 'id_odpe' =>    1
             ],
             [
                 'cod_ubigeo' => '010205',
-                'departamento_ubigeo' => 'AMAZONAS',
-                'provincia_ubigeo' => 'BAGUA',
-                'distrito_ubigeo' => 'BAGUA',
+                'nombre' => '',
                 'id_odpe' =>    1
             ],
             [
                 'cod_ubigeo' => '020101',
-                'departamento_ubigeo' => 'ANCASH',
-                'provincia_ubigeo' => 'HUARAZ',
-                'distrito_ubigeo' => 'HUARAZ',
+                'nombre' => '',
                 'id_odpe' =>    2
             ],
             [
                 'cod_ubigeo' => '020102',
-                'departamento_ubigeo' => 'ANCASH',
-                'provincia_ubigeo' => 'HUARAZ',
-                'distrito_ubigeo' => 'INDEPENDENCIA',
+                'nombre' => '',
                 'id_odpe' =>    2
             ],
             [
                 'cod_ubigeo' => '020501',
-                'departamento_ubigeo' => 'ANCASH',
-                'provincia_ubigeo' => 'CASMA',
-                'distrito_ubigeo' => 'CASMA',
-                'id_odpe' =>    3
+                'nombre' => '',
+                'id_odpe' =>    2
             ],
             [
                 'cod_ubigeo' => '020502',
-                'departamento_ubigeo' => 'ANCASH',
-                'provincia_ubigeo' => 'CASMA',
-                'distrito_ubigeo' => 'BUENA VISTA ALTA',
-                'id_odpe' =>    3
+                'nombre' => '',
+                'id_odpe' =>    2
             ]
 
         ];
