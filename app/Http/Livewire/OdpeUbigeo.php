@@ -18,10 +18,12 @@ class OdpeUbigeo extends Component
         $this->ubigeos = collect();
     }
 
-    public function updatedodpe($value){
+    public function updatedOdpe($value){
         $this->ubigeos = Ubigeo::where('id_odpe', $value)->get();
         $this->ubigeo = $this->ubigeos->first()->id ?? null;
     }
+
+
     public function render()
     {
         return view('livewire.odpe-ubigeo');

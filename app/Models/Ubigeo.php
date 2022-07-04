@@ -10,11 +10,12 @@ class Ubigeo extends Model
     use HasFactory;
     protected $fillable = [
         'cod_ubigeo',
-        'departamento_ubigeo',
-        'provincia_ubigeo',
-        'distrito_ubigeo',
+//        'departamento_ubigeo',
+//        'provincia_ubigeo',
+//        'distrito_ubigeo',
         'id_odpe'
     ];
+
     public function odpes(){
         return $this->belongsTo(Odpe::class, 'id_odpe');
     }
