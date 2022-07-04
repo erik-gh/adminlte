@@ -18,7 +18,7 @@ class OdpeUbigeo extends Component
         $this->ubigeos = collect();
     }
 
-    public function updatedOdpe($value){
+    public function updatedodpe($value){
         $this->ubigeos = Ubigeo::where('id_odpe', $value)->get();
         $this->ubigeo = $this->ubigeos->first()->id ?? null;
     }
