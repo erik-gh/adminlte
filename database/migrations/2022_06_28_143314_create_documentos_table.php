@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUbigeosTable extends Migration
+class CreateDocumentosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,20 +13,18 @@ class CreateUbigeosTable extends Migration
      */
     public function up()
     {
-        Schema::create('ubigeos', function (Blueprint $table) {
+        Schema::create('documentos', function (Blueprint $table) {
             $table->id();
-            $table->string('cod_ubigeo');
-            $table->string('nombre');
-//            $table->string('departamento_ubigeo');
-//            $table->string('provincia_ubigeo');
-//            $table->string('distrito_ubigeo');
-            $table->foreignId('id_odpe')
+            $table->string('cod_documento');
+            $table->string('documento');
+            $table->integer('estado');
+            $table->foreignId('id_sobre')
                 ->nullable()
-                ->constrained('odpes')
+                ->constrained('sobres')
                 ->cascadeOnUpdate()
                 ->nullOnDelete();
             $table->timestamps();// created_at update_at
-        });;
+        });
     }
 
     /**
@@ -36,6 +34,6 @@ class CreateUbigeosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ubigeos');
+        Schema::dropIfExists('documentos');
     }
 }
