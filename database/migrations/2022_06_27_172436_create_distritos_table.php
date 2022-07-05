@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDepartamentosTable extends Migration
+class CreateDistritosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,10 @@ class CreateDepartamentosTable extends Migration
      */
     public function up()
     {
-        Schema::create('departamentos', function (Blueprint $table) {
+        Schema::create('distritos', function (Blueprint $table) {
             $table->id();
             $table->string('codigo');
             $table->string('descripcion');
-            $table->foreignId('id_ubigeo')
-                ->nullable()
-                ->constrained('ubigeos')
-                ->cascadeOnUpdate()
-                ->nullOnDelete();
             $table->timestamps();
         });
     }
@@ -33,6 +28,6 @@ class CreateDepartamentosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('departamentos');
+        Schema::dropIfExists('distritos');
     }
 }

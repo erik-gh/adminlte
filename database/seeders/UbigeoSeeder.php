@@ -17,36 +17,47 @@ class UbigeoSeeder extends Seeder
 //        DB::table('ubigeos')->truncate();
         $datos = [
             [
-                'cod_ubigeo' => '010101',
-                'nombre' => '',
+                'codigo' => '010101',
+                'id_departamento' =>    1,
+                'id_provincia' =>    1,
+                'id_distrito' =>    1,
                 'id_odpe' =>    1
-            ],
+            ],//1
             [
-                'cod_ubigeo' => '010205',
-                'nombre' => '',
+                'codigo' => '010205',
+                'id_departamento' =>    1,
+                'id_provincia' =>    2,
+                'id_distrito' =>    2,
                 'id_odpe' =>    1
-            ],
+            ],//2
             [
-                'cod_ubigeo' => '020101',
-                'nombre' => '',
+                'codigo' => '020101',
+                'id_departamento' =>    2,
+                'id_provincia' =>    3,
+                'id_distrito' =>    3,
                 'id_odpe' =>    2
-            ],
+            ],//3
             [
-                'cod_ubigeo' => '020102',
-                'nombre' => '',
+                'codigo' => '020102',
+                'id_departamento' =>    2,
+                'id_provincia' =>    3,
+                'id_distrito' =>    4,
                 'id_odpe' =>    2
-            ],
+            ],//4
             [
-                'cod_ubigeo' => '020501',
-                'nombre' => '',
-                'id_odpe' =>    2
-            ],
+                'codigo' => '020501',
+                'id_departamento' =>    2,
+                'id_provincia' =>    4,
+                'id_distrito' =>    5,
+                'id_odpe' =>    3
+            ],//5
             [
-                'cod_ubigeo' => '020502',
-                'nombre' => '',
-                'id_odpe' =>    2
-            ]
-
+                'codigo' => '020502',
+                'id_departamento' =>    2,
+                'id_provincia' =>    4,
+                'id_distrito' =>    6,
+                'id_odpe' =>    3
+            ]//6
         ];
         DB::table('ubigeos')->insert($datos);
     }

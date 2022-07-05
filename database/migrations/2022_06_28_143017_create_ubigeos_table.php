@@ -15,11 +15,22 @@ class CreateUbigeosTable extends Migration
     {
         Schema::create('ubigeos', function (Blueprint $table) {
             $table->id();
-            $table->string('cod_ubigeo');
-            $table->string('nombre');
-//            $table->string('departamento_ubigeo');
-//            $table->string('provincia_ubigeo');
-//            $table->string('distrito_ubigeo');
+            $table->string('codigo');
+            $table->foreignId('id_departamento')
+                ->nullable()
+                ->constrained('departamentos')
+                ->cascadeOnUpdate()
+                ->nullOnDelete();
+            $table->foreignId('id_provincia')
+                ->nullable()
+                ->constrained('provincias')
+                ->cascadeOnUpdate()
+                ->nullOnDelete();
+            $table->foreignId('id_distrito')
+                ->nullable()
+                ->constrained('distritos')
+                ->cascadeOnUpdate()
+                ->nullOnDelete();
             $table->foreignId('id_odpe')
                 ->nullable()
                 ->constrained('odpes')

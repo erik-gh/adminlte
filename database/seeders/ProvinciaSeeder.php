@@ -18,33 +18,19 @@ class ProvinciaSeeder extends Seeder
             [
                 'codigo' => '01',
                 'descripcion' => 'CHACHAPOYAS',
-                'id_departamento' =>    1
-            ],
+            ],//1
             [
                 'codigo' => '02',
                 'descripcion' => 'BAGUA',
-                'id_departamento' =>    1
-            ],
+            ],//2
             [
                 'codigo' => '01',
                 'descripcion' => 'HUARAZ',
-                'id_departamento' =>    2
-            ],
-            [
-                'codigo' => '01',
-                'descripcion' => 'HUARAZ',
-                'id_departamento' =>    2
-            ],
+            ],//3
             [
                 'codigo' => '05',
                 'descripcion' => 'CASMA',
-                'id_departamento' =>    2
-            ],
-            [
-                'codigo' => '05',
-                'descripcion' => 'CASMA',
-                'id_departamento' =>    2
-            ]
+            ],//4
 
         ];
         DB::table('provincias')->insert($datos);

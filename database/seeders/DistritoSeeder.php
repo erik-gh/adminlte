@@ -18,34 +18,27 @@ class DistritoSeeder extends Seeder
             [
                 'codigo' => '01',
                 'descripcion' => 'CHACHAPOYAS',
-                'id_provincia' =>    1
-            ],
+            ],//1
             [
                 'codigo' => '05',
                 'descripcion' => 'BAGUA',
-                'id_provincia' =>    2
-            ],
+            ],//2
             [
                 'codigo' => '01',
                 'descripcion' => 'HUARAZ',
-                'id_provincia' =>    3
-            ],
+            ],//3
             [
                 'codigo' => '02',
                 'descripcion' => 'INDEPENDENCIA',
-                'id_provincia' =>    4
-            ],
+            ],//4
             [
                 'codigo' => '01',
                 'descripcion' => 'CASMA',
-                'id_provincia' =>    5
-            ],
+            ],//5
             [
                 'codigo' => '02',
                 'descripcion' => 'BUENA VISTA ALTA',
-                'id_provincia' =>    6
-            ]
-
+            ]//6
         ];
         DB::table('distritos')->insert($datos);
     }

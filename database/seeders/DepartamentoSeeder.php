@@ -18,13 +18,11 @@ class DepartamentoSeeder extends Seeder
             [
                 'codigo' => '01',
                 'descripcion' => 'AMAZONAS',
-                'id_ubigeo' =>    1
-            ],
+            ],//1
             [
                 'codigo' => '02',
                 'descripcion' => 'ANCASH',
-                'id_ubigeo' =>    2
-            ],
+            ],//2
         ];
         DB::table('departamentos')->insert($datos);
     }
