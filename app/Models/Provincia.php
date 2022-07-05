@@ -11,10 +11,9 @@ class Provincia extends Model
     protected $fillable = [
         'codigo',
         'descripcion',
-        'id_departamento'
     ];
-
-    public function departamentos(){
-        return $this->belongsTo(Departamento::class, 'id_departamento');
-    }
+/*    public function ubigeos()
+    {
+        return $this->hasMany(Ubigeo::class);
+    }*/
 }

@@ -10,12 +10,11 @@ class Departamento extends Model
     use HasFactory;
 
     protected $fillable = [
-        'cod_ubigeo',
+        'codigo',
         'descripcion',
-        'id_ubigeo'
     ];
-
-    public function ubigeos(){
-        return $this->belongsTo(Ubigeo::class, 'id_ubigeo');
-    }
+    /*public function ubigeos()
+    {
+        return $this->hasMany(Ubigeo::class);
+    }*/
 }

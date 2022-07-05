@@ -11,10 +11,10 @@ class Distrito extends Model
     protected $fillable = [
         'codigo',
         'descripcion',
-        'id_provincia'
     ];
 
-    public function provincias(){
-        return $this->belongsTo(Provincia::class, 'id_provincia');
-    }
+    /*public function ubigeos()
+    {
+        return $this->hasMany(Ubigeo::class);
+    }*/
 }
