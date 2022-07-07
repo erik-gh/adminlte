@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('apellidos');
             $table->string('nombres');
             $table->integer('estado');
+            $table->integer('request_password');
             $table->foreignId('id_perfil')
                 ->nullable()
                 ->constrained('perfiles')
