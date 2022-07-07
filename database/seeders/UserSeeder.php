@@ -16,9 +16,15 @@ class UserSeeder extends Seeder
     {
 //        DB::table('users')->truncate();
         $datos = [
-            'name' => 'Erik Tecse',
-            'email' => 'eriktecse@gmail.com',
-            'password' => bcrypt('qwerty123')
+            'dni' => '45061598',
+            'password' => '8265994a4684bc0100a39ac173d7c83002fb24dc',
+            'apellidos' => 'HUAMANCHUMO CAPUÑAY',
+            'nombres' => 'FREDDY HERNAN',
+            'estado' => 1,
+            'id_perfil' => 2,
+            'username' => '45061598',
+            'email' => 'fredy@gmail.com',
+//            'password' => bcrypt('qwerty123')
         ];
         DB::table('users')->insert($datos);
     }
