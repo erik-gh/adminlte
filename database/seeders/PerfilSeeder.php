@@ -19,11 +19,15 @@ class PerfilSeeder extends Seeder
                 'perfil' => 'ADMIN SYSTEM',
                 'descripcion' => 'SUPER ADMINISTRADOR',
                 'estado' => 1,
+                'user_create' => 'USER0001',
+                'user_update' => 'USER0001',
             ],//1
             [
                 'perfil' => 'ADMINISTRADOR',
                 'descripcion' => 'ADMINISTRADOR DEL SISTEMA',
                 'estado' => 1,
+                'user_create' => 'USER0001',
+                'user_update' => 'USER0001',
             ],//2
         ];
         DB::table('perfiles')->insert($datos);

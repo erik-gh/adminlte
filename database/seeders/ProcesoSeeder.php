@@ -20,7 +20,10 @@ class ProcesoSeeder extends Seeder
             'descripcion' => 'ELECCIONES INTERNAS 2022',
             'fecha_inicio' => '2022-01-01',
             'fecha_cierre' => '2022-11-30',
-            'estado' => 1
+            'estado' => 1,
+            'user_create' => 'USER0001',
+            'user_update' => 'USER0001',
+            'id_tipo_proceso'=> 1
         ];
         DB::table('procesos')->insert($datos);
     }

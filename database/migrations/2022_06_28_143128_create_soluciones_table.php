@@ -18,6 +18,8 @@ class CreateSolucionesTable extends Migration
             $table->string('solucion_tecnologica');
             $table->string('descripcion');
             $table->integer('estado');
+            $table->string('user_create');
+            $table->string('user_update');
             $table->timestamps();// created_at update_at
         });
     }

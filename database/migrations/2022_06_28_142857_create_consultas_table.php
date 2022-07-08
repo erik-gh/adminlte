@@ -18,6 +18,8 @@ class CreateConsultasTable extends Migration
             $table->string('consulta');
             $table->string('descripcion');
             $table->integer('estado');
+            $table->string('user_create');
+            $table->string('user_update');
             $table->timestamps();// created_at update_at
         });
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePerfilesTable extends Migration
+class CreateTipoProcesosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreatePerfilesTable extends Migration
      */
     public function up()
     {
-        Schema::create('perfiles', function (Blueprint $table) {
+        Schema::create('tipo_procesos', function (Blueprint $table) {
             $table->id();
-            $table->string('perfil');
+            $table->string('tipo_proceso');
             $table->string('descripcion');
             $table->integer('estado');
-            $table->string('user_create');
-            $table->string('user_update');
+            $table->string('eleccion');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreatePerfilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('perfiles');
+        Schema::dropIfExists('tipo_procesos');
     }
 }

@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(ConsultaSeeder::class);
         $this->call(OdpeSeeder::class);
+        $this->call(TipoProcesoSeeder::class);
         $this->call(ProcesoSeeder::class);
         $this->call(ProcesoConsultaSeeder::class);
         $this->call(ProcesoOdpeSeeder::class);
@@ -27,5 +28,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ProvinciaSeeder::class);
         $this->call(DistritoSeeder::class);
         $this->call(UbigeoSeeder::class);
+        $this->call(SolucionSeeder::class);
     }
 }

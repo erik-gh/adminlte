@@ -20,6 +20,13 @@ class CreateProcesosTable extends Migration
             $table->timestamp('fecha_inicio');
             $table->timestamp('fecha_cierre');
             $table->integer('estado');
+            $table->string('user_create');
+            $table->string('user_update');
+            $table->foreignId('id_tipo_proceso')
+                ->nullable()
+                ->constrained('tipo_procesos')
+                ->cascadeOnUpdate()
+                ->nullOnDelete();
             $table->timestamps();// created_at update_at
         });
     }
