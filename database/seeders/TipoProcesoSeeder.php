@@ -18,7 +18,7 @@ class TipoProcesoSeeder extends Seeder
             'tipo_proceso' => 'ELECCIONES INTERNAS',
             'descripcion' => 'ELECCIONES INTERNAS',
             'estado' => 1,
-            'eleccion' => '2'
+            'eleccion' => 1
         ];
         DB::table('tipo_procesos')->insert($datos);
     }

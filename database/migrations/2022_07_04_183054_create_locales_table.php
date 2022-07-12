@@ -17,7 +17,7 @@ class CreateLocalesTable extends Migration
             $table->id();
             $table->string('cod_local');
             $table->string('nombre_local');
-            $table->integer('direccion_local');
+            $table->string('direccion_local');
             $table->integer('estado');
             $table->foreignId('id_distrito')
                 ->nullable()

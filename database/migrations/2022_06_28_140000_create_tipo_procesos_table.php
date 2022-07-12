@@ -18,7 +18,7 @@ class CreateTipoProcesosTable extends Migration
             $table->string('tipo_proceso');
             $table->string('descripcion');
             $table->integer('estado');
-            $table->string('eleccion');
+            $table->integer('eleccion');
             $table->timestamps();
         });
     }

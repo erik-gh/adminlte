@@ -18,42 +18,42 @@ class MesaSeeder extends Seeder
             [
                 'nro_mesa' => '107001',
                 'nro_electores' => 94,
-                'orden' => null,
+                'orden' => 1,
                 'id_local' => 1,
                 'id_solucion' => 2,
             ],//1
             [
                 'nro_mesa' => '105001',
                 'nro_electores' => 55,
-                'orden' => null,
+                'orden' => 2,
                 'id_local' => 2,
                 'id_solucion' => 2,
             ],//2
             [
                 'nro_mesa' => '103002',
                 'nro_electores' => 138,
-                'orden' => null,
+                'orden' => 3,
                 'id_local' => 3,
                 'id_solucion' => 2,
             ],//3
             [
                 'nro_mesa' => '271001',
                 'nro_electores' => 143,
-                'orden' => null,
+                'orden' => 4,
                 'id_local' => 4,
                 'id_solucion' => 2,
             ],//4
             [
                 'nro_mesa' => '103004',
                 'nro_electores' => 78,
-                'orden' => null,
+                'orden' => 5,
                 'id_local' => 5,
                 'id_solucion' => 2,
             ],//5
             [
                 'nro_mesa' => '113016',
                 'nro_electores' => 200,
-                'orden' => null,
+                'orden' => 6,
                 'id_local' => 6,
                 'id_solucion' => 2,
             ],//6

@@ -32,5 +32,6 @@ class DatabaseSeeder extends Seeder
         $this->call(EtapaSeeder::class);
         $this->call(LocalSeeder::class);
         $this->call(MesaSeeder::class);
+        $this->call(OdpeSolucionSeeder::class);
     }
 }
