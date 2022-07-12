@@ -19,15 +19,15 @@ class OdpeSeeder extends Seeder
             [
                 'nombre_odpe' => 'ORC CHACHAPOYAS',
                 'estado' => 1
-            ],
+            ],//1
             [
                 'nombre_odpe' => 'ORC HUARAZ',
                 'estado' => 1
-            ],
+            ],//2
             [
                 'nombre_odpe' => 'PUNTO FOCAL SANTA',
                 'estado' => 1
-            ]
+            ]//3
         ];
         DB::table('odpes')->insert($datos);
     }

@@ -30,5 +30,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UbigeoSeeder::class);
         $this->call(SolucionSeeder::class);
         $this->call(EtapaSeeder::class);
+        $this->call(LocalSeeder::class);
+        $this->call(MesaSeeder::class);
     }
 }

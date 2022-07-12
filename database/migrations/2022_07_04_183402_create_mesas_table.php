@@ -23,6 +23,11 @@ class CreateMesasTable extends Migration
                 ->constrained('locales')
                 ->cascadeOnUpdate()
                 ->nullOnDelete();
+            $table->foreignId('id_solucion')
+                ->nullable()
+                ->constrained('soluciones')
+                ->cascadeOnUpdate()
+                ->nullOnDelete();
             $table->timestamps();// created_at update_at
         });
     }
