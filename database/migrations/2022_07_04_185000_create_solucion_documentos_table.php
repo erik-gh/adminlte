@@ -20,6 +20,11 @@ class CreateSolucionDocumentosTable extends Migration
                 ->constrained('soluciones')
                 ->cascadeOnUpdate()
                 ->nullOnDelete();
+            $table->foreignId('id_sobre')
+                ->nullable()
+                ->constrained('sobres')
+                ->cascadeOnUpdate()
+                ->nullOnDelete();
             $table->foreignId('id_documento')
                 ->nullable()
                 ->constrained('documentos')

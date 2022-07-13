@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\SobreMesa;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -33,5 +34,9 @@ class DatabaseSeeder extends Seeder
         $this->call(LocalSeeder::class);
         $this->call(MesaSeeder::class);
         $this->call(OdpeSolucionSeeder::class);
+        $this->call(SobreSeeder::class);
+        $this->call(SobreMesaSeeder::class);
+        $this->call(DocumentoSeeder::class);
+        $this->call(SolucionDocumentoSeeder::class);
     }
 }

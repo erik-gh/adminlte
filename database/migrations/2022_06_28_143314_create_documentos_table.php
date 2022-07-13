@@ -17,12 +17,8 @@ class CreateDocumentosTable extends Migration
             $table->id();
             $table->string('cod_documento');
             $table->string('documento');
+            $table->string('descripcion');
             $table->integer('estado');
-            $table->foreignId('id_sobre')
-                ->nullable()
-                ->constrained('sobres')
-                ->cascadeOnUpdate()
-                ->nullOnDelete();
             $table->timestamps();// created_at update_at
         });
     }
