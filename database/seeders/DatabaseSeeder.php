@@ -38,5 +38,7 @@ class DatabaseSeeder extends Seeder
         $this->call(SobreMesaSeeder::class);
         $this->call(DocumentoSeeder::class);
         $this->call(SolucionDocumentoSeeder::class);
-    }
+        $this->call(SufragioSeeder::class);
+        $this->call(ConsultaSufragioSeeder::class);
+            }
 }
