@@ -16,6 +16,7 @@ class CreateMesasTable extends Migration
         Schema::create('mesas', function (Blueprint $table) {
             $table->id();
             $table->string('nro_mesa');
+            $table->string('codigo');
             $table->integer('nro_electores');
             $table->integer('orden');
             $table->foreignId('id_local')
