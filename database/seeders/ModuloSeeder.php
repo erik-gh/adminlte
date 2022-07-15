@@ -34,11 +34,11 @@ class ModuloSeeder extends Seeder
                 'descripcion' => 'Configuracion del proceso actual',
                 'icono' => 'tablet',
                 'url' => 'parametro',
-                'estado' => 1
+                'estado' => 2
             ],//3
             [
-                'modulo' => 'Control de Calidad',
-                'descripcion' => 'Control de Calidad',
+                'modulo' => 'Recepcion de Documentos',
+                'descripcion' => 'Recepcion de documentos',
                 'icono' => 'folder-person',
                 'url' => 'control',
                 'estado' => 1
