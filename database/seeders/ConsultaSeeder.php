@@ -43,7 +43,6 @@ class ConsultaSeeder extends Seeder
                 'user_create' => 'USER0001',
                 'user_update' => 'USER0001',
             ]//4
-
         ];
         DB::table('consultas')->insert($datos);
     }

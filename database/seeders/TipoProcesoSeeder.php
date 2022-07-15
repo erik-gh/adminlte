@@ -15,8 +15,8 @@ class TipoProcesoSeeder extends Seeder
     public function run()
     {
         $datos = [
-            'tipo_proceso' => 'ELECCIONES INTERNAS',
-            'descripcion' => 'ELECCIONES INTERNAS',
+            'tipo_proceso' => 'ELECCIONES MUNICIPALES',
+            'descripcion' => 'ELECCIONES MUNICIPALES',
             'estado' => 1,
             'eleccion' => 1
         ];

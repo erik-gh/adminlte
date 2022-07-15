@@ -30,7 +30,7 @@ class SobreSeeder extends Seeder
             [
                 'cod_sobre' => 'CODPPLOMO',
                 'sobre' => 'PLOMO',
-                'descripcion' => 'Sobre de color Rojo',
+                'descripcion' => 'Sobre de color Plomo',
                 'estado' => 1
             ],//3
             [
@@ -41,7 +41,7 @@ class SobreSeeder extends Seeder
             ],//4
             [
                 'cod_sobre' => 'CODHCAM',
-                'sobre' => 'HCAM',
+                'sobre' => 'HCAMM',
                 'descripcion' => 'Sobre HCAM',
                 'estado' => 1
             ]//5

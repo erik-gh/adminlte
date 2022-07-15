@@ -21,7 +21,7 @@ class ConsultaSufragioSeeder extends Seeder
             ],//1
             [
                 'id_consulta' => 1,
-                'id_sufragio' => 2,
+                'id_sufragio' => 3,
             ],//2
             [
                 'id_consulta' => 2,
@@ -29,7 +29,7 @@ class ConsultaSufragioSeeder extends Seeder
             ],//3
             [
                 'id_consulta' => 2,
-                'id_sufragio' => 3,
+                'id_sufragio' => 2,
             ],//4
             [
                 'id_consulta' => 3,

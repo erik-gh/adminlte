@@ -16,46 +16,51 @@ class SolucionDocumentoSeeder extends Seeder
     {
         $datos = [
             //Convencional
-            [
-                'id_solucion' => 1,'id_sobre' => 1,'id_documento' => 2,
+            [ //Rojo
+                'id_solucion' => 1,'id_sobre' => 1,'id_documento' => 5,
             ],//1
-            [
-                'id_solucion' => 1,'id_sobre' => 2,'id_documento' => 2,
+            [//Morado
+                'id_solucion' => 1,'id_sobre' => 2,'id_documento' => 5,
             ],//2
-            [
-                'id_solucion' => 1,'id_sobre' => 3,'id_documento' => 2,
+            [//Plomo
+                'id_solucion' => 1,'id_sobre' => 3,'id_documento' => 5,
             ],//3
-            [
-                'id_solucion' => 1,'id_sobre' => 4,'id_documento' => 3,
+
+            [//Naranja
+                'id_solucion' => 1,'id_sobre' => 4,'id_documento' => 6,
             ],//4
-            [
-                'id_solucion' => 1,'id_sobre' => 5,'id_documento' => 4,
+            [//HCAMM
+                'id_solucion' => 1,'id_sobre' => 5,'id_documento' => 7,
             ],//5
+
             // STAE
-            [
-                'id_solucion' => 2,'id_sobre' => 1,'id_documento' => 1,
+            [ //Rojo
+                'id_solucion' => 2,'id_sobre' => 1,'id_documento' => 4,
             ],//6
             [
-                'id_solucion' => 2,'id_sobre' => 1,'id_documento' => 2,
+                'id_solucion' => 2,'id_sobre' => 1,'id_documento' => 3,
             ],//7
-            [
-                'id_solucion' => 2,'id_sobre' => 2,'id_documento' => 1,
+
+            [ //Morado
+                'id_solucion' => 2,'id_sobre' => 2,'id_documento' => 4,
             ],//8
             [
-                'id_solucion' => 2,'id_sobre' => 2,'id_documento' => 2,
+                'id_solucion' => 2,'id_sobre' => 2,'id_documento' => 3,
             ],//9
-            [
-                'id_solucion' => 2,'id_sobre' => 3,'id_documento' => 1,
+
+            [//Plomo
+                'id_solucion' => 2,'id_sobre' => 3,'id_documento' => 4,
             ],//10
             [
-                'id_solucion' => 2,'id_sobre' => 3,'id_documento' => 2,
+                'id_solucion' => 2,'id_sobre' => 3,'id_documento' => 3,
             ],//11
-            [
-                'id_solucion' => 2,'id_sobre' => 4,'id_documento' => 3,
+
+            [//Naranja
+                'id_solucion' => 2,'id_sobre' => 4,'id_documento' => 6,
+            ],//11
+            [//HACAMM
+                'id_solucion' => 2,'id_sobre' => 5,'id_documento' => 7,
             ],//12
-            [
-                'id_solucion' => 2,'id_sobre' => 5,'id_documento' => 4,
-            ],//13
         ];
         DB::table('solucion_documentos')->insert($datos);
     }
