@@ -17,21 +17,21 @@ class SufragioSeeder extends Seeder
         $datos = [
             [
                 'codigo' => 'R',
-                'descripcion' => 'Regional',
+                'descripcion' => 'REGIONAL',
                 'estado' => 1,
                 'user_create' => 'USER0001',
                 'user_update' => 'USER0001',
             ],//1
             [
                 'codigo' => 'P',
-                'descripcion' => 'Municipal Provincial',
+                'descripcion' => 'MUNICIPAL PROVINCIAL',
                 'estado' => 1,
                 'user_create' => 'USER0001',
                 'user_update' => 'USER0001',
             ],//2
             [
                 'codigo' => 'PD',
-                'descripcion' => 'Municipal Provincial - Distrital',
+                'descripcion' => 'MUNICIPAL PROVINCIAL - DISTRITAL',
                 'estado' => 1,
                 'user_create' => 'USER0001',
                 'user_update' => 'USER0001',

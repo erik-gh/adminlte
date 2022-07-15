@@ -17,28 +17,28 @@ class ConsultaSeeder extends Seeder
         $datos = [
             [
                 'consulta' => 'RPD',
-                'descripcion' => 'Regional / Provincial - Distrital',
+                'descripcion' => 'REGIONAL / PROVINCIAL - DISTRITAL',
                 'estado' => 1,
                 'user_create' => 'USER0001',
                 'user_update' => 'USER0001',
             ],//1
             [
                 'consulta' => 'RP',
-                'descripcion' => 'Regional / Provincial',
+                'descripcion' => 'REGIONAL / PROVINCIAL',
                 'estado' => 1,
                 'user_create' => 'USER0001',
                 'user_update' => 'USER0001',
             ],//2
             [
                 'consulta' => 'P',
-                'descripcion' => 'Provincial',
+                'descripcion' => 'PROVINCIAL',
                 'estado' => 1,
                 'user_create' => 'USER0001',
                 'user_update' => 'USER0001',
             ],//3
             [
                 'consulta' => 'PD',
-                'descripcion' => 'Provincial - Distrital',
+                'descripcion' => 'PROVINCIAL - DISTRITAL',
                 'estado' => 1,
                 'user_create' => 'USER0001',
                 'user_update' => 'USER0001',
