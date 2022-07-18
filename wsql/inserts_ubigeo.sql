@@ -1,3 +1,5 @@
+SET NAMES UTF8
+
 INSERT INTO archelect.ubigeos (codigo, id_departamento, id_provincia, id_distrito, id_odpe, created_at, updated_at) VALUES ('010101', 1, 5, 1, 19, '2022-07-18 15:06:59', '2022-07-18 15:06:59');
 
 INSERT INTO archelect.ubigeos (codigo, id_departamento, id_provincia, id_distrito, id_odpe, created_at, updated_at) VALUES ('010102', 1, 5, 2, 19, '2022-07-18 15:06:59', '2022-07-18 15:06:59');
