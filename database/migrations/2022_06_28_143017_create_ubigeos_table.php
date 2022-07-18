@@ -14,7 +14,7 @@ class CreateUbigeosTable extends Migration
     public function up()
     {
         Schema::create('ubigeos', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->string('codigo');
             $table->foreignId('id_departamento')
                 ->nullable()

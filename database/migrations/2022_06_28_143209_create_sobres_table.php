@@ -14,7 +14,7 @@ class CreateSobresTable extends Migration
     public function up()
     {
         Schema::create('sobres', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->string('cod_sobre');
             $table->string('sobre');
             $table->string('descripcion');

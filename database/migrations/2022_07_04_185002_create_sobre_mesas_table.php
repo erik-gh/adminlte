@@ -14,7 +14,7 @@ class CreateSobreMesasTable extends Migration
     public function up()
     {
         Schema::create('sobre_mesas', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->foreignId('id_sobre')
                 ->nullable()
                 ->constrained('sobres')

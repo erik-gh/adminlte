@@ -14,7 +14,7 @@ class CreateTipoProcesosTable extends Migration
     public function up()
     {
         Schema::create('tipo_procesos', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->string('tipo_proceso');
             $table->string('descripcion');
             $table->integer('estado');

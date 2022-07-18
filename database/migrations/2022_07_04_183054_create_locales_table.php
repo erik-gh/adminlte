@@ -19,9 +19,9 @@ class CreateLocalesTable extends Migration
             $table->string('nombre_local');
             $table->string('direccion_local');
             $table->integer('estado');
-            $table->foreignId('id_distrito')
+            $table->foreignId('id_ubigeo')
                 ->nullable()
-                ->constrained('distritos')
+                ->constrained('ubigeos')
                 ->cascadeOnUpdate()
                 ->nullOnDelete();
             $table->timestamps();// created_at update_at

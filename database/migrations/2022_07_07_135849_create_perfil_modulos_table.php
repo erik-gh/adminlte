@@ -14,7 +14,7 @@ class CreatePerfilModulosTable extends Migration
     public function up()
     {
         Schema::create('perfil_modulos', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->foreignId('id_perfil')
                 ->nullable()
                 ->constrained('perfiles')

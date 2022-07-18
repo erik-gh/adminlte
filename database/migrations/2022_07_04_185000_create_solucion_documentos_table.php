@@ -14,7 +14,7 @@ class CreateSolucionDocumentosTable extends Migration
     public function up()
     {
         Schema::create('solucion_documentos', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->foreignId('id_solucion')
                 ->nullable()
                 ->constrained('soluciones')

@@ -14,7 +14,7 @@ class CreateConsultaSufragiosTable extends Migration
     public function up()
     {
         Schema::create('consulta_sufragios', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->foreignId('id_consulta')
                 ->nullable()
                 ->constrained('consultas')

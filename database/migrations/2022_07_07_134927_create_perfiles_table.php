@@ -14,7 +14,7 @@ class CreatePerfilesTable extends Migration
     public function up()
     {
         Schema::create('perfiles', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->string('perfil');
             $table->string('descripcion');
             $table->integer('estado');

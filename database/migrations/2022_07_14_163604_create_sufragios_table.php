@@ -14,7 +14,7 @@ class CreateSufragiosTable extends Migration
     public function up()
     {
         Schema::create('sufragios', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->string('codigo');
             $table->string('descripcion');
             $table->integer('estado');

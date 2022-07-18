@@ -14,7 +14,7 @@ class CreateOdpesTable extends Migration
     public function up()
     {
         Schema::create('odpes', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->string('nombre_odpe');
             $table->integer('estado');
             $table->timestamps();// created_at update_at

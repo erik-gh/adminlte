@@ -14,7 +14,7 @@ class CreateDistritosTable extends Migration
     public function up()
     {
         Schema::create('distritos', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->string('codigo');
             $table->string('descripcion');
             $table->timestamps();

@@ -14,7 +14,7 @@ class CreateProcesoOdpesTable extends Migration
     public function up()
     {
         Schema::create('proceso_odpes', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->foreignId('id_proceso')
                 ->nullable()
                 ->constrained('procesos')

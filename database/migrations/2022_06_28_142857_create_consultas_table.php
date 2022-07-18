@@ -14,7 +14,7 @@ class CreateConsultasTable extends Migration
     public function up()
     {
         Schema::create('consultas', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->string('consulta');
             $table->string('descripcion');
             $table->integer('estado');

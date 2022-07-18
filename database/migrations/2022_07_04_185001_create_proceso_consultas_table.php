@@ -14,7 +14,7 @@ class CreateProcesoConsultasTable extends Migration
     public function up()
     {
         Schema::create('proceso_consultas', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->foreignId('id_proceso')
                 ->nullable()
                 ->constrained('procesos')

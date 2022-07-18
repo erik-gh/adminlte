@@ -14,7 +14,7 @@ class CreateMesasTable extends Migration
     public function up()
     {
         Schema::create('mesas', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->string('nro_mesa');
             $table->string('codigo');
             $table->integer('nro_electores');

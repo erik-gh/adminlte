@@ -14,7 +14,7 @@ class CreateOdpeSolucionesTable extends Migration
     public function up()
     {
         Schema::create('odpe_soluciones', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->foreignId('id_odpe')
                 ->nullable()
                 ->constrained('odpes')
