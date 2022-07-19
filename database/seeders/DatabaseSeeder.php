@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ConsultaSeeder::class);
         $this->call(TipoProcesoSeeder::class);
         $this->call(ProcesoSeeder::class);
-        $this->call(ProcesoConsultaSeeder::class);
+        $this->call(ProcesoConsultaSeeder::class);-- no va, se elimino la tabla
         $this->call(SolucionSeeder::class);
         $this->call(EtapaSeeder::class);
         $this->call(SobreSeeder::class);
