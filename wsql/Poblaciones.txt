@@ -49,6 +49,10 @@ select DISTINCT COD_UBI, DEPAR_UBI, PROV_UBI, DIST_UBI from sufragio_nacional_ve
 # INSERT INTO archelect.odpes (nombre_odpe, estado, created_at, updated_at)
 # SELECT NOM_ODPE, 1, NOW(), NOW() FROM sufragio_nacional_vertical GROUP BY NOM_ODPE ORDER BY NOM_ODPE;
 
+# Poblando proceso_odpes
+# INSERT INTO archelect.proceso_odpes (id_proceso, id_odpe, created_at, updated_at)
+# SELECT 1, id, now(), now() FROM odpes;
+
 # Poblando departamentos
 INSERT INTO archelect.departamentos (codigo, descripcion, created_at, updated_at)
 SELECT SUBSTRING(COD_UBI, 1, 2) AS CODIGO, DEPAR_UBI, NOW(), NOW()
