@@ -18,6 +18,7 @@ class CreateDocumentosTable extends Migration
             $table->string('cod_documento');
             $table->string('documento');
             $table->string('descripcion');
+            $table->integer('cant_digito');// Aqui son 9 u 10 digitos
             $table->integer('estado');
             $table->timestamps();// created_at update_at
         });
