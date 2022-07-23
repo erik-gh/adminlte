@@ -57,7 +57,7 @@ WHERE m.nro_mesa= '000001' AND sd.id_sobre NOT IN (1,2,3)
 # GROUP BY nro_mesa, consulta, solucion_tecnologica,id_sobre, sobres, id_documento, documentos;
 
 /* Cantidad de Documentos en General */
-SELECT COUNT(*) AS cant_doc_general
+SELECT COUNT(*) AS cant_doc_general -- 636315 documentos
 FROM (SELECT m.nro_mesa, c.consulta, sb.id AS id_sobre, sb.descripcion AS sobres,
              s3.solucion_tecnologica, d.id AS id_documento, d.descripcion AS documentos
 FROM mesas m

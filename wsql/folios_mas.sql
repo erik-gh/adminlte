@@ -75,7 +75,6 @@ FROM solucion_documentos;
 
 SELECT *
 FROM sufragios;
-SELECT * FROM sobre_mesas;
 SELECT *
 FROM consultas c
          INNER JOIN sufragios s on c.estado = s.estado;
@@ -144,7 +143,7 @@ FROM mesas m
 WHERE m.nro_mesa= '004141' AND sd.id_sobre IN (1,2,3)
 ORDER BY s2.descripcion;
 
-/** solo mesas por consulta - sobres Otros-Documentos - documentos**/
+/** solo mesas por consulta - sobres Otros-Documentos - documentos **/
 SELECT m.nro_mesa, c.consulta, c.descripcion,
 s3.descripcion, sd.id_sobre, s4.descripcion, d.id,d.documento,d.descripcion
 FROM mesas m
@@ -155,9 +154,6 @@ FROM mesas m
          INNER JOIN sobres s4 on sd.id_sobre = s4.id
          INNER JOIN documentos d on sd.id_documento = d.id
 WHERE m.nro_mesa= '004141' AND sd.id_sobre NOT IN (1,2,3);
-
-
-
 
 -- Encontrar un convencional - Mesa
 SELECT * FROM mesas WHERE id_solucion = 1;
@@ -174,11 +170,3 @@ SELECT nro_mesa, nro_electores,
 FROM mesas
 WHERE nro_mesa = '004141';
 
-
-
-SELECT * FROM mesas WHERE id_solucion = 2;
-SELECT * FROM mesas WHERE id_solucion = 3;
-
-SELECT * FROM sobres; -- 6
-SELECT * FROM documentos; -- 8
-SELECT * FROM solucion_documentos;

@@ -1,6 +1,4 @@
-select *
-from mesas;
--- 80940
+select * from mesas; -- 80940
 /* Sacando las mesas por solucionTecnologia - codigoConsulta */
 
 SELECT N_MESA_MADRE, COD_ST, COD_CONSULTA
@@ -86,7 +84,24 @@ select *
 FROM consulta_sufragios;
 SELECT *
 FROM sufragios;
+/* Realizacion de query para poder ver las consultas */
+SELECT DISTINCT c.id, c.descripcion
+                    FROM ubigeo_consultas uc
+                             INNER JOIN consultas c ON c.id = uc.id_consulta
+                             INNER JOIN ubigeos u ON uc.id_ubigeo = u.id
+                    WHERE uc.id_proceso = 1
+                      AND u.id_odpe = 1
+                      AND u.id_departamento = 3
+                    ORDER BY c.id;
 
+SELECT o.id, o.nombre_odpe
+FROM procesos p
+    INNER JOIN ubigeo_consultas uc on p.id = uc.id_proceso
+    INNER JOIN ubigeos u on uc.id_ubigeo = u.id
+    INNER JOIN odpes o on u.id_odpe = o.id
+WHERE p.id = 1
+group by o.id, o.nombre_odpe
+order by o.id, o.nombre_odpe;
 
 
 

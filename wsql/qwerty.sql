@@ -36,30 +36,4 @@ FROM (SELECT COD_UBI, COD_CONSULTA, COD_PROCESO
          INNER JOIN consultas c ON snv.COD_CONSULTA = c.consulta
          INNER JOIN procesos p ON snv.COD_PROCESO = p.proceso
 
-select *
-from users;
-
-SELECT c.id, c.descripcion
-FROM ubigeo_consultas uc
-         INNER JOIN consultas c ON c.id = uc.id_consulta
-         INNER JOIN ubigeos u ON uc.id_ubigeo = u.id
-         INNER JOIN odpes o ON u.id_odpe = o.id
-WHERE uc.id_proceso = $this -> intIdProceso
-  AND uc.id_odpe = $this -> intIdOdpe
-  AND u.id_departamento = $this -> intIdDepartamento
-  AND id_provincia = $this -> intIdProvincia
-  AND id_distrito = $this -> intIdDistrito
-ORDER BY c.id;
-SELECT c.id, c.descripcion
-FROM ubigeo_consultas uc
-         INNER JOIN consultas c ON c.id = uc.id_consulta
-         INNER JOIN ubigeos u ON uc.id_ubigeo = u.id
-WHERE uc.id_proceso = 1
-  AND u.id_odpe = 1
-  AND u.id_departamento = 3
-  AND u.id_provincia = 1
-  AND u.id_distrito = 251
-ORDER BY c.id;
-
-SELECT * FROM mesas;
 
