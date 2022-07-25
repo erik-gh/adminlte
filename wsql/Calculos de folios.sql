@@ -235,3 +235,6 @@ WHERE nro_mesa = '000001';
 
 
 
+
+
+SELECT * FROM documentos;

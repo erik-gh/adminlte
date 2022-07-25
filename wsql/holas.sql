@@ -80,8 +80,6 @@ FROM solucion_documentos;
 SELECT *
 FROM sufragios;
 SELECT *
-FROM sobre_mesas;
-SELECT *
 FROM consultas c
          INNER JOIN sufragios s on c.estado = s.estado;
 select *

@@ -157,7 +157,7 @@ WHERE m.nro_mesa= '004141' AND sd.id_sobre NOT IN (1,2,3);
 
 -- Encontrar un convencional - Mesa
 SELECT * FROM mesas WHERE id_solucion = 1;
-SELECT * FROM mesas WHERE nro_mesa = '004141'; -- 284 -
+SELECT * FROM mesas WHERE nro_mesa = '000002'; -- 284 -
 
 SELECT nro_mesa, nro_electores,
        CASE
@@ -168,5 +168,5 @@ SELECT nro_mesa, nro_electores,
            THEN floor(nro_electores DIV 40) +1
        END AS folios
 FROM mesas
-WHERE nro_mesa = '004141';
+WHERE nro_mesa = '000002';
 

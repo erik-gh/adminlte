@@ -1,7 +1,5 @@
 /* ******* QUERYS DE AVANCE POR ODPE  Y SOLUCION TECNOLOGICA ******** */
 
-
-
 /** QUERY DE CONVENCIONAL */
 SELECT nro_mesa, consulta, solucion_tecnologica,id_sobre, sobres, id_documento, documentos
 FROM (
